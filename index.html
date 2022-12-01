@@ -9,14 +9,11 @@
 </head>
 
 <body>
-    <p>Redirecting you in few seconds</p>
+    <p>1 seconde SVP vous êtes redirigé vers l’application...</p>
 
     <script>
-        // intent:#Intent;action=com.appopenfromweb.mobikul;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;S.msg_from_browser=Launched%20from%20Browser;end"
         setTimeout(() =>
-            window.location.replace(`
-            intent:#Intent;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;data=skydateapp://skydate;end
-            `), 2000)
+            window.location.replace('skydate://?success=true&payment=complete'), 2000)
     </script>
 </body>
 
